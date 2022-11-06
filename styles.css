@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid blue; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 20vh 80vh;
+    /* border: thin solid red; */
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    /* border: 1px solid red; */
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 10px;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: rgb(228, 228, 228);
+}
+
+.header-1st-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    /* border: thin solid blue; */
+}
+
+input {
+    width: 90%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(226, 225, 225)
+}
+
+.names {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    /* border: thin solid blue; */
+    font-weight: bold;
+}
+
+.names img {
+    /* border: thin solid blue; */
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background: #0284c7;
+    display: grid;
+    padding: 20px;
+    align-content: start;
+    gap: 50px;
+}
+
+.nav img, .settings img {
+    height: 30px;
+}
+
+.nav, .settings {
+    display: grid;
+    gap: 15px;
+}
+
+.dashboard-title img {
+    height: 40px;
+    width: 40px;
+}
+
+.addi-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard-title .addi-container{
+    font-size: larger;
+}
+
+.header-2nd-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header-2nd-row div {
+    /* border: thin solid blue; */
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    gap: 20px;
+}
+
+.left div {
+    font-weight: bold;
+}
+
+.right {
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: #0284c7;
+    color: white;
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: small;
+}
+
+.profile-name {
+    font-size: large;
+}
+
+
+
+
+
