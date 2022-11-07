@@ -8,7 +8,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 20vh 1fr;
     /* border: thin solid red; */
 }
 
@@ -21,12 +21,6 @@
     margin-left: 40px;
     margin-right: 40px;
     box-shadow: 10px;
-}
-
-.main-content {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background: rgb(228, 228, 228);
 }
 
 .header-1st-row {
@@ -47,7 +41,7 @@ input {
     height: 25px;
     border-radius: 10px;
     border: none;
-    background-color:rgb(226, 225, 225)
+    background-color:rgb(226, 225, 225);
 }
 
 .names {
@@ -71,6 +65,7 @@ input {
     padding: 20px;
     align-content: start;
     gap: 50px;
+    min-height: 100vh;
 }
 
 .nav img, .settings img {
@@ -143,6 +138,79 @@ button {
 
 .profile-name {
     font-size: large;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: rgb(228, 228, 228);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+
+.main-first-col {
+    grid-column: 1 / 2;
+    border: thin solid blue;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    gap: 10px;
+}
+
+.main-second-col {
+    grid-column: 2 / 3;
+    border: thin solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.first-row, .second-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: thin solid red;
+    gap: 10px;
+}
+
+.announcements-trendings {
+    border: thin solid blue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.announcements-contents {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: thin solid rgb(165, 165, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#no-border {
+    border: none;
+}
+
+.announcements-contents p {
+    font-size: small;
+}
+
+.people {
+    border: thin solid blue;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.people img {
+    width: 50px;
+    height: 50px;
 }
 
 
