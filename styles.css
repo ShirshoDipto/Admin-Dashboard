@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid blue; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -9,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 20vh 1fr;
-    /* border: thin solid red; */
 }
 
 .header {
@@ -17,40 +15,23 @@
     grid-row: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    /* border: 1px solid red; */
     margin-left: 40px;
     margin-right: 40px;
     box-shadow: 10px;
 }
 
 .header-1st-row {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-}
-
-.search {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    /* border: thin solid blue; */
+    gap: 15px;
 }
 
 input {
-    width: 90%;
+    flex: 1;
     height: 25px;
     border-radius: 10px;
     border: none;
     background-color:rgb(226, 225, 225);
-}
-
-.names {
-    display: flex;
-    gap: 5%;
-    align-items: center;
-    justify-content: center;
-    /* border: thin solid blue; */
-    font-weight: bold;
 }
 
 .sidebar {
@@ -92,7 +73,7 @@ input {
 
 .header-2nd-row {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .left, .right {
@@ -110,7 +91,7 @@ input {
 
 .right {
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
     flex-wrap: wrap;
 }
 
@@ -143,7 +124,6 @@ button {
 
 .main-first-col {
     grid-column: 1 / 2;
-    /* border: thin solid blue; */
     display: grid;
     grid-template-rows: 40px 1fr;
     padding: 10px;
@@ -151,7 +131,6 @@ button {
 
 .main-second-col {
     grid-column: 2 / 3;
-    /* border: thin solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -160,15 +139,12 @@ button {
 }
 
 .first-row, .second-row {
-    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    /* border: thin solid red; */
     gap: 10px;
 }
 
 .announcements-trendings {
-    /* border: thin solid blue; */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -196,7 +172,7 @@ button {
 }
 
 .gapClass {
-    gap: 5px;
+    gap: 20px;
 }
 
 .people {
@@ -206,13 +182,27 @@ button {
     gap: 20px;
 }
 
-.people img {
+.people img, .header-1st-row img[src="icons/man.png"] {
     width: 50px;
     height: 50px;
 }
 
+.profile-icon img {
+    width: 80px;
+    height: 80px;
+
+}
+
 .hashtagName {
     font-size: 0.9rem;
+}
+
+.hashtagName p {
+    font-size: small;
+}
+
+#gray-color {
+    color: #60696d;
 }
 
 .projects {
@@ -223,13 +213,12 @@ button {
 }
 
 .project-card {
-    /* border: thin solid blue; */
     height: 200px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    border-left: 7px solid orange;
 }
 
 .project-details div {
@@ -239,6 +228,8 @@ button {
 
 .announcements-trendings, .project-card {
     background: white;
+    border-radius: 7px;
+    box-shadow: 0px 5px 5px rgb(168, 165, 165);
 }
 
 .share-and-stuff {
